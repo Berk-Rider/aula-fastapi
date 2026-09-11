@@ -1,7 +1,21 @@
-tutorial de como rodar o programa:
+# Formulário HTML + FastAPI + Pydantic + SQLite
 
-Ative o ambiente virtual conforme seu sistema.
+Exemplo didático no qual:
 
-Depois instale: pip install fastapi uvicorn
+- o formulário HTML coleta os dados;
+- o JavaScript envia JSON com `fetch`;
+- o Pydantic valida o contrato somente no back-end;
+- o SQLite mantém os registros;
+- a resposta da API é impressa na página.
 
-depois use o comando para rodar: uvicorn main:app --reload
+## Como executar
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+Depois, abra `http://127.0.0.1:8000`.
+
